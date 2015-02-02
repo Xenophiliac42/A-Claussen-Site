@@ -1,0 +1,46 @@
+html {
+	background-image: url(img\Morph.jpeg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+}
+
+body {
+	font-family: Tahoma, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 7%;
+	color: #A52A2A;
+}
+
+.first-cl {
+	text-align: center;
+	margin-top: 5%;
+	margin-left: 30%;
+	margin-right: 30%;
+	line-height: 1em;
+	color: #A52A2A;
+}
+
+.second-cl {
+	text-align: center;
+	margin-top: 2%;
+	margin-left: 30%;
+	margin-right: 30%;
+	line-height: 1em;
+	color: #A52A2A}
+
+.game-mentions {
+	color: #A52A2A;
+	list-style: none;
+	text-align: center;
+	margin-top: 2%;
+}
+.game-mentions li {
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+}
