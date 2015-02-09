@@ -1,0 +1,2 @@
+Font - Tahoma, sans serif. It provides a professional look to the font, while also not being too "blocky" or off-putting.
+Color - Depending on the background image, the color may change. I do plan to have it be toned down, however, and try to stay away from "active" or bright colors. Once I settle on an image that looks good, i'll adapt the color to suit it. 
