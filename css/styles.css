@@ -24,7 +24,9 @@ h1 {
 	line-height: 1em;
 	color: #A52A2A;
 }
-
+.iFrame {
+	text-align: center;
+}
 .second-cl {
 	text-align: center;
 	margin-top: 2%;
