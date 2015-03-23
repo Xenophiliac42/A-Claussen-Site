@@ -6,10 +6,32 @@
 		<meta name="keywords" content="about me, games, self, video games, programming, rpg, rts, fps, programming languages, coding languages"/>
 		<title>Adam Claussen - About Me</title>
 		<link href="css/styles.css" type="text/css" rel="stylesheet" />
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
 	</head>
 	<body>
-		<div class="Generic Block">
-			<h1> Adam Claussen - About Me </h1>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="home"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#game-mentions">Game Mentions</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="BodyContainer">
+			<div class="about" id="about">
+			<h1 style="font-size:60px"> Adam Claussen - About Me </h1>
 			<p class="first-cl">My name is Adam Claussen, and I am currently a 20 year old student at the University of Toledo. Presently, 
 			I am working on getting my Bachelors of Information Technology from UT, and I hope to go into the IT job force once I get my 
 			degree. I have worked with a multitude of programming languages, including C#, C++, Java, HTML, and some other, less well-known
@@ -18,7 +40,7 @@
 			<p class="second-cl">In my off time, I am an avid gamer and spend much of my time playing a myriad of games. I enjoy games ranging
 			from Role-Playing Games to Real-Time Strategy to First-Person Shooters, and all things in-between. Just a few honourable mentions 
 			include: </p>
-			<ul class="game-mentions">
+			<ul class="game-mentions" id="game-mentions">
 				<li>- DOTA 2 -</li>
 				<li>- Warcraft 3 -</li>
 				<li>- Skyrim -</li>
@@ -26,25 +48,35 @@
 				<li>- Dragon Age: Inquisition -</li>
 			</ul>
 		</div>
-		<div class="iFrame">
-			<iframe align="middle" class="map" frameborder="1" style="border:medium dashed rgb(255,255,255)" src="https://www.google.com/maps/embed/v1/place?q=North%20Engineering%2C%20University%20of%20Toledo%2C%20Toledo%20Ohio&key=AIzaSyDn8lQC7vuQyrJ9Y5S9lbD2OX0OTD0goMQ">
-			</iframe>
+		<div class="contact" id="contact">
+			<div class="Form">
+				<form align="middle" class="contact-form" id="form">
+					<p class="form-name">
+						<input name="name" type="text" class="contact-input" placeholder="Name" id="name" />
+					</p>
+					<p class="form-email">
+						<input name="email" type="text" class="contact-input" placeholder="Email" id="email" />
+					</p>
+					<p class="form-comment">
+						<textarea name="text" class="contact-input" placeholder="Comments" id="comment"></textarea>
+					</p>
+					<div class="form-submit">
+						<input type="submit" value="Send" id="button-blue" />
+					</div>
+				</form>
+			</div>
 		</div>
-		<div class="Form">
-			<form align="middle" class="contact-form" id="form">
-				<p class="form-name">
-					<input name="name" type="text" class="contact-input" placeholder="Name" id="name" />
-				</p>
-				<p class="form-email">
-					<input name="email" type="text" class="contact-input" placeholder="Email" id="email" />
-				</p>
-				<p class="form-comment">
-					<textarea name="text" class="contact-input" placeholder="Comments" id="comment"></textarea>
-				</p>
-				<div class="form-submit">
-					<input type="submit" value="Send" id="button-blue" />
-				</div>
-			</form>
+		<div class="toggleButton" align="middle">
+			<button onclick="toggle('function1');toggle('function2');addClick()">Click Me</button>
+			<p id="displayButton"></p>
+			<div id="function1" style="display:none">
+				<input type="text" id="addition" value="0"></input>
+			</div>
+			<div id="function2" style="display:none">
+				<input type="text" id="addition2" value="1"></input>
+			</div>
 		</div>
+		</div>
+	<script src="js/javascript1.js"></script>	
 	</body>
 </html>
